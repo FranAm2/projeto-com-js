@@ -6,9 +6,10 @@ function carregar() {
     var hora = data.getHours();
     msg.innerHTML = `Agora são ${hora} horas`;
     if (hora >= 0 && hora < 12) {
-        img1.src = 'src/imagens/manha.jpg';
+        img.src = 'src/imagens/manha.jpg';
         document.body.style.backgroundColor = '#E2CC81';
-        msg.innerHTML = 'Bom Dia';
+        msg1.innerHTML = 'Bom Dia';
+        
     } else if(hora >= 12 && hora <= 18){
         img.src = 'src/imagens/tarde.jpg';
         document.body.style.backgroundColor = '#85563A';
